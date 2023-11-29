@@ -18,4 +18,17 @@ public class TestListExamples {
     List<String> expected = Arrays.asList("a", "a", "b", "c", "d");
     assertEquals(expected, merged);
   }
+
+  	//@Test 
+	public void testReverseInPlace0() {
+    int[] input1 = { 0 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{0}, input1);
+	}
+  //	@Test 
+	public void testReverseInPlace3_7() {
+    int[] input1 = { 3,5,6,7 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{7,6,5, 3 }, input1);
+	} // failure inducing as a JUnit tests
 }
